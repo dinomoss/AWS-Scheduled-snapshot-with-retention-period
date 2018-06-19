@@ -1,17 +1,18 @@
 # AWS scheduled snapshot with retention period.
 
-This can help create your own backups of all AWS instances for free.
+This can help you create your own backups of all AWS instances for free.
 
 ## First create scheduled snapshot.
 
 Procedure: 
-* Login to your AWS account
-* Open CloudWatch service
-* Go to Rules section
+* Login to your ***AWS account***
+* Open ***CloudWatch*** service
+* Go to ***Rules*** section
 * Create new Rule
-* Under Event Source select Schedule option
-* Then Cron expression
+* Under Event Source select ***Schedule*** option
+* Then ***Cron expression***
 
+Enter schedule:
 ```
 To create snapshot hourly enter: 0 /1 * * ? *
 ```
@@ -25,19 +26,22 @@ To create snapshot monthly enter:  0 0 1 * ? *
 To create snapshot yearly enter:  0 0 1 1 ? *
 ```
 
-***The sintaks is little bit different then on all contab generators.***
-Below the **Cron expression** should show **Next 10 Trigger Date(s)**
+The sintaks is little bit different then on all contab generators.
+Below the **Cron expression** should appear **Next 10 Trigger Date(s)**
 
 On the right section **Targets** form drop down menu select: **EC2 CreateSnapshot API call**
+
 **VolumeID**: Enter the Volume ID you want to backup.
 
 To find Volume ID go to **Service** then **EC2** and on left side go to section **Elastic Block Store** and click on **Volumes**. 
 Copy VolumeID you want to backup.
+
 Then click on **Configure details**
 
 On the next page you have to specify the name of this Rule.
 
-***If you receive the error the you probably haven't enter correct Cron expression***
+If you receive the error the you probably haven't enter correct Cron expression
+
 When you create scheduled backups it will continue creating new snapshots infinitely.
 
 ## Create snapshot retention period.
