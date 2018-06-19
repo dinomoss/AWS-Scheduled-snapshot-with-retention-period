@@ -25,7 +25,7 @@ To create snapshot monthly enter:  0 0 1 * ? *
 To create snapshot yearly enter:  0 0 1 1 ? *
 ```
 
-The sintaksa is little bit different then on all contab generators
+The sintaks is little bit different then on all contab generators
 Below the **Cron expression** should show **Next 10 Trigger Date(s)**
 
 On the right section Targets form drop down menu select: **EC2 CreateSnapshot API call**
