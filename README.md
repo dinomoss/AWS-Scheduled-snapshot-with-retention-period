@@ -123,4 +123,4 @@ example
 
 ## Restore:
 
-To restore snapshot first you have to create volume from snapshot, then Detach volume form instace and attach new one.
+To restore snapshot first you have to create volume from snapshot, then detach volume form instace and attach with new one.
