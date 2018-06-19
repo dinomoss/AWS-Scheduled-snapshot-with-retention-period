@@ -116,7 +116,7 @@ If you have 50 snapshots and you want to keep first five (oldest five) including
 ```
 crontab -e
 ```
-example
+Example
 ```
 55 1 * * * ec2-describe-snapshots | sort -k5M -k5dr | sed 1,30d | sort -k5M -k5d | sed 1,5d | awk '{print $2}' | xargs -n 1 -t ec2-delete-snapshot
 ```
