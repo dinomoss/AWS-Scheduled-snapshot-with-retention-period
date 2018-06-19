@@ -96,11 +96,11 @@ SNAPSHOT        snap-0595e0c759881e88d  vol-000665368b5d22a3d   completed       
 ## Delete snapshots 
 If you have 50 snapshots and you want to keep last 10 snapshots or last 30 days then:
 
-``
-For 10 days **| sed 1,10d |**
+```
+For 10 days | sed 1,10d |
 
-For 30 days **| sed 1,30d |**
-``
+For 30 days | sed 1,30d |
+```
 
 For 30 days:
 ```
