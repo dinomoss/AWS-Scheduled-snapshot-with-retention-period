@@ -1,6 +1,6 @@
 # AWS scheduled snapshot with retention period
 
-This can help you create your own backups of all AWS instances for free.
+This can help you create your own backups of all AWS instances.
 
 ## First create scheduled snapshot.
 
