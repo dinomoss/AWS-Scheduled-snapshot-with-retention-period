@@ -1,4 +1,4 @@
-# AWS scheduled snapshot with retention period
+# AWS scheduled snapshot with retention period for Ubuntu
 
 This can help you create your own backups of all AWS instances.
 
